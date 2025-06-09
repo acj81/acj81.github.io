@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Home</title>
-    <link>https://anthonyjones.net/tags/</link>
+    <link>https://acj81.github.io/tags/</link>
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-uk</language>
     <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://anthonyjones.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://acj81.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go</title>
-      <link>https://anthonyjones.net/tags/go/</link>
+      <link>https://acj81.github.io/tags/go/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://anthonyjones.net/tags/go/</guid>
+      <guid>https://acj81.github.io/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>React</title>
-      <link>https://anthonyjones.net/tags/react/</link>
+      <link>https://acj81.github.io/tags/react/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://anthonyjones.net/tags/react/</guid>
+      <guid>https://acj81.github.io/tags/react/</guid>
       <description></description>
     </item>
   </channel>
