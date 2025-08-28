@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pandas on Home</title>
+    <link>https://acj81.github.io/tags/pandas/</link>
+    <description>Recent content in Pandas on Home</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Fri, 11 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://acj81.github.io/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Real-Time NLP to track public opinion</title>
+      <link>https://acj81.github.io/projects/real-time-nlp/</link>
+      <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://acj81.github.io/projects/real-time-nlp/</guid>
+      <description>Using social media post data to estimate public opinion of specific entities</description>
+    </item>
+  </channel>
+</rss>
