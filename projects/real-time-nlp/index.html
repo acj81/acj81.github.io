@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Real-Time NLP to track public opinion | Home</title>
-<meta name="keywords" content="TextBlob, NLP, pandas, Data Science, ML">
+<meta name="keywords" content="Sentiment Analysis, NLP, pandas, Data Science, ML">
 <meta name="description" content="Using social media post data to estimate public opinion of specific entities">
 <meta name="author" content="Anthony Jones">
 <link rel="canonical" href="https://acj81.github.io/projects/real-time-nlp/">
@@ -64,7 +64,7 @@
     <meta property="article:section" content="projects">
     <meta property="article:published_time" content="2025-07-11T00:00:00+00:00">
     <meta property="article:modified_time" content="2025-07-11T00:00:00+00:00">
-    <meta property="article:tag" content="TextBlob">
+    <meta property="article:tag" content="Sentiment Analysis">
     <meta property="article:tag" content="NLP">
     <meta property="article:tag" content="Pandas">
     <meta property="article:tag" content="Data Science">
@@ -102,10 +102,10 @@
   "name": "Real-Time NLP to track public opinion",
   "description": "Using social media post data to estimate public opinion of specific entities",
   "keywords": [
-    "TextBlob", "NLP", "pandas", "Data Science", "ML"
+    "Sentiment Analysis", "NLP", "pandas", "Data Science", "ML"
   ],
-  "articleBody": "Overview - Social Media are generally terrible investors: Economic reasons for this are varied and not generally the point of this project - most social media favourites are volatile stocks with inflated or deflated values that makes investing in them risky. The aim of this project was to create a leaderboard to track a given community’s perceptions of stocks - potentially enabling an inverse fund which buys when opinion is negative, sells when positive.\nDevelopment Scraping Social Media posts Most social media will have specific APIs to scrape posts pertaining to specific topics or communities - for the sake of efficiency, I chose reddit’s r/wallstreetbets as it has a proven track record of poor investment selection - and also routinely includes specific stock tickers in titles i.e. : “so bullish on AAPL this week guys, earnings report looking good” reddit’s API is free up to a daily limit so no issues with scraping incrementally and merging over time.\nProcessing posts From here, I was able to write a function to scrape all posts from r/wallstreetbets and a separate function to convert that post into a weighted dict of stock tickers : community sentiments This works by taking the title, scraping any tickers out that are in the NYSE ticker dataset and extracting sentiments about those tickers using TextBlob - these values are then weighted by post karma to get an idea of how much the community agrees with this sentiment.\nIteration \u0026 improvements Opinions tend to change quickly online, especially in financial social media - strong positive opinions could be overcome very quickly; I decided to update the model to have sentiments decay over time: I updated the model to apply a coefficient of 0.9 to existing sentiments every day - simulating this decay of opinion.\n",
-  "wordCount" : "296",
+  "articleBody": "Overview - Social Media are generally terrible investors: Economic reasons for this are varied and not generally the point of this project - most social media favourites are volatile stocks with inflated or deflated values that makes investing in them risky. The aim of this project was to create a leaderboard to track a given community’s perceptions of stocks - potentially enabling an inverse fund which buys when opinion is negative, sells when positive.\nDevelopment Scraping Social Media posts Most social media will have specific APIs to scrape posts pertaining to specific topics or communities - for the sake of efficiency, I chose reddit’s r/wallstreetbets as it has a proven track record of poor investment selection - and also routinely includes specific stock tickers in titles i.e. : “so bullish on AAPL this week guys, earnings report looking good” reddit’s API is free up to a daily limit so no issues with scraping incrementally and merging over time.\nProcessing posts From here, I was able to write a function to scrape all posts from r/wallstreetbets and a separate function to convert that post into a weighted dict of stock tickers : community sentiments This works by taking the title, identifying any tickers that are in the NASDAQ ticker dataset and extracting sentiments about those tickers using vaderSentiment - these values are then weighted by post karma to get an idea of how much the community agrees with this sentiment.\nIteration \u0026 improvements Opinions tend to change quickly online, especially in financial social media - strong positive opinions could be overcome very quickly; I decided to update the model to have sentiments decay over time: The model now applies a coefficient of 0.9 to existing sentiments every day - simulating this decay of opinion over time.\nCODE Available at https://github.com/acj81/realtime-nlp\nDATA NASDAQ stock tickers available at https://datahub.io/core/nasdaq-listings\n",
+  "wordCount" : "306",
   "inLanguage": "en",
   "datePublished": "2025-07-11T00:00:00Z",
   "dateModified": "2025-07-11T00:00:00Z",
@@ -212,17 +212,21 @@ The aim of this project was to create a leaderboard to track a given community&r
 reddit&rsquo;s API is free up to a daily limit so no issues with scraping incrementally and merging over time.</p>
 <h2 id="processing-posts">Processing posts<a hidden class="anchor" aria-hidden="true" href="#processing-posts">#</a></h2>
 <p>From here, I was able to write a function to scrape all posts from r/wallstreetbets and a separate function to convert that post into a weighted dict of stock tickers : community sentiments
-This works by taking the title, scraping any tickers out that are in the NYSE ticker dataset and extracting sentiments about those tickers using TextBlob - these values are then weighted by post karma to get an idea of how much the community agrees with this sentiment.</p>
+This works by taking the title, identifying any tickers that are in the NASDAQ ticker dataset and extracting sentiments about those tickers using vaderSentiment - these values are then weighted by post karma to get an idea of how much the community agrees with this sentiment.</p>
 <h2 id="iteration--improvements">Iteration &amp; improvements<a hidden class="anchor" aria-hidden="true" href="#iteration--improvements">#</a></h2>
 <p>Opinions tend to change quickly online, especially in financial social media - strong positive opinions could be overcome very quickly; I decided to update the model to have sentiments decay over time:
-I updated the model to apply a coefficient of 0.9 to existing sentiments every day - simulating this decay of opinion.</p>
+The model now applies a coefficient of 0.9 to existing sentiments every day - simulating this decay of opinion over time.</p>
+<h2 id="code">CODE<a hidden class="anchor" aria-hidden="true" href="#code">#</a></h2>
+<p>Available at <a href="https://github.com/acj81/realtime-nlp">https://github.com/acj81/realtime-nlp</a></p>
+<h2 id="data">DATA<a hidden class="anchor" aria-hidden="true" href="#data">#</a></h2>
+<p>NASDAQ stock tickers available at <a href="https://datahub.io/core/nasdaq-listings">https://datahub.io/core/nasdaq-listings</a></p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://acj81.github.io/tags/textblob/">TextBlob</a></li>
+      <li><a href="https://acj81.github.io/tags/sentiment-analysis/">Sentiment Analysis</a></li>
       <li><a href="https://acj81.github.io/tags/nlp/">NLP</a></li>
       <li><a href="https://acj81.github.io/tags/pandas/">Pandas</a></li>
       <li><a href="https://acj81.github.io/tags/data-science/">Data Science</a></li>
@@ -232,7 +236,7 @@ I updated the model to apply a coefficient of 0.9 to existing sentiments every d
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Real-Time NLP to track public opinion on x"
-            href="https://x.com/intent/tweet/?text=Real-Time%20NLP%20to%20track%20public%20opinion&amp;url=https%3a%2f%2facj81.github.io%2fprojects%2freal-time-nlp%2f&amp;hashtags=TextBlob%2cNLP%2cpandas%2cDataScience%2cML">
+            href="https://x.com/intent/tweet/?text=Real-Time%20NLP%20to%20track%20public%20opinion&amp;url=https%3a%2f%2facj81.github.io%2fprojects%2freal-time-nlp%2f&amp;hashtags=SentimentAnalysis%2cNLP%2cpandas%2cDataScience%2cML">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
