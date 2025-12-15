@@ -19,5 +19,4 @@ title: About
     - Email: acj8110@dmc.chat
     - Tel: +44 07592417259
 
-## My CV: ##
-    !Download [here](https://acj81.github.io/assets/CV.pdf)
+## [Download My CV:](https://acj81.github.io/assets/CV.pdf) ##
