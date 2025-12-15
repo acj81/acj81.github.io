@@ -7,7 +7,7 @@ title: About
 
 ## About Me: ##
     - I'm a second year Computer Science Student at the University of York.
-    - My main interests are in Machine Learning and AI - safety, verification and scientific applications.
+    - My main interests are in AI - safety, verification and applications.
     - I'd like to build a world where machines serve people, not the other way around.
 
 ## My Projects: ##
