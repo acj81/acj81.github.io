@@ -1,2 +1,6 @@
 title: Anthony Jones
-remote_theme: minima
+remote_theme: jekyll/minima
+plugins:
+    - jekyll-remote-theme
+minima:
+    skin: dark
