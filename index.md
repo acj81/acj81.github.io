@@ -13,7 +13,7 @@ title: About
 ## My Projects: ##
     - A ML model to help students see if they are being overcharged for their rent.
     - A CNN to classify butterfly species, deployed online using Streamlit.
-    - A local LLM using RAG to help students with disorganised university modules
+    - A local LLM using RAG to help students with disorganised modules.
 
 See the source code for my projects [here](https://acj81.github.io)
 
