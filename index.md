@@ -14,9 +14,10 @@ title: About
     - A ML model to help students see if they are being overcharged for their rent.
     - A CNN to classify butterfly species, deployed online using Streamlit.
     - A YOLO to identify where forest fires are spreading using satellite video data.
+See the source code for my projects [here](https://acj81.github.io)
 
 ## Contact Me: ##
     - Email: acj8110@dmc.chat
     - Tel: +44 07592417259
 
-## [Download My CV:](https://acj81.github.io/assets/CV.pdf) ##
+## [Download My CV](https://acj81.github.io/assets/CV.pdf) ##
