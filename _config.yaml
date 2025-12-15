@@ -1,3 +1,4 @@
 title: Anthony Jones
 theme: minima
-skin: dark
+minima:
+    skin: dark
