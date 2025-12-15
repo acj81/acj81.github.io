@@ -20,4 +20,4 @@ title: About
     - Tel: +44 07592417259
 
 ## My CV: ##
-    Download [here](https://acj81.github.io/assets/CV.pdf)
+    !Download [here](https://acj81.github.io/assets/CV.pdf)
