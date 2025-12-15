@@ -1,4 +1,2 @@
 title: Anthony Jones
-theme: jekyll/minima
-minima:
-    skin: dark
+theme: minima
